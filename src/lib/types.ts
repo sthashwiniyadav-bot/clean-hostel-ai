@@ -27,9 +27,9 @@ export type Report = {
   analysis: Analysis;
   createdAt: string;
   status: Status;
-  assignedTo?: string;
-  afterPhoto?: string;
-  resolvedAt?: string;
+  assignedTo?: string | undefined;
+  afterPhoto?: string | undefined;
+  resolvedAt?: string | undefined;
 };
 
 export type User = {
