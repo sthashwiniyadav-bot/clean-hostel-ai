@@ -159,3 +159,21 @@
     color: var(--color-foreground);
   }
 }
+
+@layer components {
+  .gradient-brand {
+    background-image: linear-gradient(135deg, var(--primary) 0%, var(--brand) 55%, var(--success) 100%);
+  }
+  .gradient-brand-text {
+    background-image: linear-gradient(100deg, var(--primary), var(--success));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .surface-card {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-2xl);
+    box-shadow: 0 6px 24px -14px oklch(0.4 0.08 210 / 45%);
+  }
+}
